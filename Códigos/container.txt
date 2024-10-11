@@ -1,0 +1,47 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+
+        
+        body: Column(
+
+        children: [
+          Container(
+            height: 570.0, //Altura de 148 px
+            width: double.infinity, //Ocupa todo el ancho disponible
+            color: Colors.grey, //Color de fondo gris
+            child: const Text('Tamaño card'), //Texto dentro del primer container
+          ),
+
+          const SizedBox(height: 12.0), //Espacio de 12 px entre containers
+          Container(
+            height: 148.0, //Altura de 148 px
+            width: double.infinity, //Ocupa todo el ancho disponible
+            color: Colors.blue, //Color de fondo azul
+            child: const Text('Tamaño item lista'), //Texto dentro del segundo container
+          ),
+
+          const SizedBox(height: 12.0), //Espacio de 12 px entre containers
+          Container(
+            height: 570.0, //Altura de 148 px
+            width: double.infinity, //Ocupa todo el ancho disponible
+            color: Colors.blue, //Color de fondo azul
+            child: const Text('Tamaño item lista'), //Texto dentro del segundo container
+
+          ),
+        ],
+        ),
+      ),
+    );
+  }
+}
